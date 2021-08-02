@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-size:62.5%;
+    color:white;
+  
+  }
+/* body{
+    
+  } */
+.taskbar{
+    position:absolute;
+    top:0px;
+    display: inline-block;
+    height:200px ;
+    width: 100vw;
+    /* background-color:#1e1F26; */
+    /* background-image:linear-gradient(#1e1f2631 40%, #283655 60%) ; */
+    background-repeat: repeat-x;
+    background-size: contain;
+    /* animation: animate 4s linear infinite ; */
+     
+  }
+.taskbar2{
+    position: absolute;
+    top: 0px;
+    left: ;
+    display: inline-block;
+    height:200px ;
+    width: 100vw;
+    background-color:transparent;
+    background-image:url("./images/mask.png");
+    background-repeat: repeat-x;
+    background-position: 100px;
+    background-size: contain;
+    animation: animate 6s linear infinite ;
+     
+  }
+.taskbar3{
+    
+    position:absolute;
+    top: 0px;
+     
+    display: inline-block;
+    height:50px ;
+    width: 100vw;
+    background-color:transparent;
+    background-color:#1e1f26b2;
+    /* background-image:linear-gradient( black 60%,#1e1f2600 40%);
+    background-image: linear-gradient(to top,  #4D648D 45% ,black 65% ); */
+    z-index: 9999;
+    /* background-color:red; */
+    /* background-image:url("./images/mask.png"); */
+    /* background-repeat: repeat-x;
+    background-position: 100px;
+    background-size: contain;
+    animation: animate 6s linear infinite ; */
+     
+  }
+  .taskbar3 h1{
+    /* display:inline; */
+    margin-left: 2rem;
+    font-size:3rem;
+    margin-top:1rem;
+  }
+  @keyframes  animate{
+    0%{
+      /* transform: translateX(0%); */
+      background-position: 0px;
+    }
+      
+    50%{
+      /* transform: translateX(10%); */
+      background-position: 200px;
+    }
+    100%{
+      /* transform: translateX(0%); */
+      background-position: 0px;
+    }
+    
+  }
+.taskbar-links{
+  position: absolute;
+  right: 10%;
+  top: 3%;
+  color: white;
+
+  margin-bottom: 10px;
+  font-size: 4rem;
+}
+.taskbar-link a{
+  margin-left: 200px;
+  padding-right: 2rem;
+  color: white;
+}
+.taskbar-links a{
+   
+}
+   
+ 
+.content{
+    height: 150vh;
+    width: 100vw;
+    margin-top: 0%;
+    background-color:#283655;
+    background-image: url("./images/home-image2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index:-999;
+  
+}
+.content2{
+    position: relative;
+    height:150vh;
+    width: 100vw;
+    background-color: #4D648D;
+    background-color: #283655;
+    background-image: url("./images/content-image2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw 150vh;
+    overflow:auto;
+    
+    z-index: -1;
+  
+  }
+.footer{
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    background-color:#D0E1F9;
+    z-index:1;
+}
+
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(to top, #283655 45%, #4D648D 65%);
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0px;
+   
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 150px;
+}
+.waveAnimation .waveTop {
+animation: move-wave 3s;
+ -webkit-animation: move-wave 3s;
+ -webkit-animation-delay: 1s;
+ animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 170px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 150px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+.social-media{
+  position: absolute;
+  /* top: 0px; */
+  bottom: 0px;
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  height:auto;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.13); */
+  z-index:999999;
+
+}
+.footer a{
+  /* margin-left: 7rem; */
+   margin-right: 7rem; 
+   color: white;
+   color: black;
+   z-index:99999999;
+
+   font-size: 3rem;
+}
+ 
+.social-media-images{
+  height:50px;
+  width:50px;
+  margin-top: 0px;;
+}
+ 
+.home-page-content{
+  display:inline-block;
+  margin-top: 50vh;
+  font-size: 10rem;
+  margin-left: 15vw;
+  font-family: 'Dancing Script', cursive;
+  /* justify-content: center;
+  align-items: center; */
+}
+.content a{
+  position: absolute;
+  color: white;
+  z-index: 9999;
+  text-decoration:none;
+  background-color:#4D648D;
+  padding:10px 10px;
+  
+  /* display:inline-block; */
+
+}
+
+
+
+
+
+
+
+
+/* ####################################################################  mouse effect css   #################################################################3 */
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color:transparent;
+}
+.canvas#canvas {
+	position:fixed;
+	left: 0;
+	top: 100px;
+	width: 100%;
+	height: 100%;
+  background-color:transparent;
+  z-index: 99999999;
+}
+
+ 
+
+
+
+/* ################################################################################################################################### */
+  
+.container{
+  position:absolute;
+  top: 5%;
+  left: 40%;
+  display: inline-block;
+  height: 300px;
+  width:300px;
+}
+
+.slider-iamges{
+  height: 300px;
+  width: 300px;
+}
+/* ##########################################################################################*/
+a{
+  font-family: 'Antonio', sans-serif;
+font-family: 'Teko', sans-serif;
+}
+a:hover{
+  border:3px solid  white;
+  box-shadow: 0px 0px 10px white inset;
+  background-color:transparent;
+  transform: scale(1.03);
+}
+.contact_detail{
+  display:flex;
+  flex-wrap:wrap;
+  position:absolute; 
+  top:10px; 
+  justify-content: center;
+  align-items: space-around;
+  z-index:999;
+  position:absolute;
+  /* margin: auto; */
+  height: auto;
+  width: 100vw;
+}
+.d1{
+   
+  height:20rem;
+  width:20%;
+  display:inline-block;
+  border-right:2px solid rgba(255, 255, 255, 0.192);
+  font-size: 4rem;
+  margin-left:1rem;
+  margin-top: 5rem;
+  margin: 5rem auto ;
+  /* overflow-x: auto; */
+  white-space:inherit;
+  white-space:unset;
+  /* background-color: rgba(255, 255, 255, 0.082); */
+  z-index: 999;
+
+
+}
+.footer h1{
+  font-family: 'Bangers', cursive;
+  font-size:5rem;
+  z-index:999;
+  color: white;
+  display: block;
+}
+
+
+/* ###################################################################################### */
+    
+
+.cards-box{
+   display:flex;
+   justify-content:space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   height: 50%;
+   width:100vw;
+   background-color:transparent;
+   overflow-y:scroll;
+ }
+.card{
+  height: 80%;
+  width:300px;
+  background-color:transparent;
+  background-image: url("./images/card_image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center ;
+  position: relative;
+  z-index:999
+
+}
+.content2{
+  
+  display:flex;
+  align-items:center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.events{
+  width:100vw;
+  height:10%;
+  background-color:transparent;
+   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  
+  
+
+}
+.dis{
+  position:absolute;
+  height:100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+  /* background-color:rgba(253, 253, 253, 0.103); */
+  border: 2px solid white ;
+  box-shadow: 0px 0px 30px white inset;
+  display: none;
+  overflow:hidden;
+}
+ 
+.card:hover .dis{
+  display:inline-block;
+}
+
+ 
